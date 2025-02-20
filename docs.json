@@ -41,7 +41,6 @@
           {
             "group": "API Documentation",
             "pages": [
-              "api-reference/authentication",
               "api-reference/using_the_API",
               "api-reference/errors and rate limit"
             ]
