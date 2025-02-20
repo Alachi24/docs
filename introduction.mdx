@@ -1,18 +1,31 @@
 ---
 title: Introduction
-description: "Welcome to the home of your new documentation"
+icon: "house"
+description: "Get started with the basics of the TMDB API."
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
+<img className="block dark:hidden" src="/images/Tmdb.svg" alt="Tmdb" />
+<img className="hidden dark:block" src="/images/Tmdb.svg" alt="Tmdb" />
+
+<Note>
+  Please note that the API registration process is not optimized for mobile
+  devices so you should access these pages on a desktop computer and browser.
+</Note>
+
+# Welcome
+
+Welcome to version 3 of The Movie Database (TMDB) API. This is where you will find the definitive list of currently available methods for our movie, tv, actor and image API. If you need help or support, please head over to our [API support forum](https://www.themoviedb.org/talk/category/5047958519c29526b50017d6).
+
+To register for an API key, click the [API link](https://www.themoviedb.org/settings/api) from within your account settings page.
+
+Before being issued an API key you will have to agree to our terms of use. You can read that [here][def].
+
+### A few useful tips...
+
+- The configuration methods are useful to get the static lists of data we use throughout the database.
+  - You can find things like the languages, countries, timezones and translations that we use. The configuration method also holds useful image information.
+- Understanding the basics of our authentication is useful. You can read about this here.
+- We enforce some amount of rate limiting on the API. You can read about that here.
 
 ## Setting up
 
@@ -22,7 +35,7 @@ The first step to world-class documentation is setting up your editing environme
   <Card
     title="Edit Your Docs"
     icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
+    href="api-reference/using_the_API"
   >
     Get your docs set up locally for easy development
   </Card>
@@ -69,3 +82,5 @@ Update your docs to your brand and add valuable content for the best user conver
     Check out our showcase of our favorite documentation
   </Card>
 </CardGroup>
+
+[def]: https://www.themoviedb.org/api-terms-of-use

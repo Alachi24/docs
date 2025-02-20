@@ -1,0 +1,11 @@
+th,
+td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+.get-key {
+  background-color: dodgerblue !important;
+  height: 55px !important;
+  width: 95%;
+}

@@ -1,16 +1,27 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: "📜Introduction"
+description: "Get started with the basics of the TMDB API."
 ---
 
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+  Please note that the API registration process is not optimized for mobile
+  devices so you should access these pages on a desktop computer and browser.
 </Note>
 
 ## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Welcome to version 3 of The Movie Database (TMDB) API. This is where you will find the definitive list of currently available methods for our movie, tv, actor and image API. If you need help or support, please head over to our [API support forum](https://www.themoviedb.org/talk/category/5047958519c29526b50017d6).
+
+To register for an API key, click the [API link](https://www.themoviedb.org/settings/api) from within your account settings page.
+
+Before being issued an API key you will have to agree to our terms of use. You can read that [here](https://www.themoviedb.org/api-terms-of-use).
+
+### A few useful tips...
+
+- The configuration methods are useful to get the static lists of data we use throughout the database.
+  - You can find things like the languages, countries, timezones and translations that we use. The configuration method also holds useful image information.
+- Understanding the basics of our authentication is useful. You can read about this here.
+- We enforce some amount of rate limiting on the API. You can read about that here.
 
 <Card
   title="Plant Store Endpoints"
@@ -19,15 +30,3 @@ There are two ways to build API documentation: [OpenAPI](https://mintlify.com/do
 >
   View the OpenAPI specification file
 </Card>
-
-## Authentication
-
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
-
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```

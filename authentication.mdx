@@ -1,0 +1,33 @@
+---
+title: Authentication
+icon: "key"
+openapi: get /authentication
+---
+
+### Application
+
+#### The default way to authenticate.
+
+Application level authentication would generally be considered the default way of authenticating yourself on the API. Version 3 is controlled by one of either a single query parameter, `api_key`, or by using your access token as a `Bearer` token. You can request an API key by logging in to your account on TMDB and clicking [here](https://www.themoviedb.org/settings/api).
+
+**Bearer Token**
+
+The default method to authenticate is with your access token. If you head into your account page, under the API settings section, you will see a new token listed called **_API Read Access Token_**. This token is expected to be sent along as an `Authorization` header. A simple cURL example using this method looks like the following:
+
+```cURL
+curl --request GET \
+     --url 'https://api.themoviedb.org/3/movie/11' \
+     --header 'Authorization: Bearer {token}'
+```
+
+Using the Bearer token has the added benefit of being a single authentication process that you can use across both the v3 and v4 methods. Neither one of them provides any more or less access so which one you choose is completely up to you.
+
+### User
+
+#### Need to make a user based call?
+
+**User Authentication**
+
+You can authenticate TMDB users within your application to extend the TMDB experience within your application. This will let your users (nay—our users) do things like rate movies, maintain their favourite and watch lists as well as do things like create and edit custom lists—all while staying in sync with their account on TMDB.
+
+User authentication is controlled with a `session_id` query parameter. You can generate a `session_id` by following the steps outlined here.
