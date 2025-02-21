@@ -3,7 +3,7 @@
   "theme": "Teal",
   "name": "TheMovieDb",
   "colors": {
-    "primary": "red",
+    "primary": "#01D277",
     "light": "#01D277",
     "dark": "#01D277"
   },
@@ -365,6 +365,7 @@
     "primary": {
       "type": "button",
       "label": "TMDB",
+      "color": "gray",
       "href": "https://www.themoviedb.org/"
     }
   },
