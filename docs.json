@@ -47,7 +47,7 @@
           {
             "group": "Endpoints",
             "openapi": {
-              "source": "/api-reference/Themoviedb.json",
+              "source": "/api-reference/openapi.json",
               "directory": "api-reference"
             }
           }
