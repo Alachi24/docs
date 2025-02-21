@@ -3,7 +3,7 @@
   "theme": "Teal",
   "name": "TheMovieDb",
   "colors": {
-    "primary": "#01D277",
+    "primary": "red",
     "light": "#07C983",
     "dark": "#01D277"
   },
