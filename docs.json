@@ -18,6 +18,8 @@
             "pages": [
               "introduction",
               "authentication",
+              "using_the_API",
+              "errors and rate limit",
               "quickstart",
               "development"
             ]
@@ -40,10 +42,7 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": [
-              "api-reference/using_the_API",
-              "api-reference/errors and rate limit"
-            ]
+            "pages": []
           },
           {
             "group": "Account",
@@ -353,8 +352,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/Tmdb.svg",
+    "dark": "/logo/Tmdb.svg"
   },
   "navbar": {
     "links": [
