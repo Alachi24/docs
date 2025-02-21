@@ -3,9 +3,9 @@
   "theme": "Teal",
   "name": "TheMovieDb",
   "colors": {
-    "primary": "#0D9373",
+    "primary": "#01D277",
     "light": "#07C983",
-    "dark": "#0D9373"
+    "dark": "#01D277"
   },
   "favicon": "/Tmdb.svg",
   "navigation": {
