@@ -15,12 +15,7 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": [
-              "introduction",
-              "authentication",
-              "using_the_API",
-              "errors_and_rate_limit"
-            ]
+            "pages": ["introduction", "authentication", "errors_and_rate_limit"]
           }
         ]
       },
@@ -45,7 +40,7 @@
         "groups": [
           {
             "group": "Using the API",
-            "pages": []
+            "pages": ["append_to_response"]
           },
           {
             "group": "Endpoints",
