@@ -19,20 +19,7 @@
               "introduction",
               "authentication",
               "using_the_API",
-              "errors_and_rate_limit",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "errors_and_rate_limit"
             ]
           }
         ]
@@ -42,6 +29,22 @@
         "groups": [
           {
             "group": "API Documentation",
+            "pages": []
+          },
+          {
+            "group": "Endpoints",
+            "openapi": {
+              "source": "/api-reference/openapi.json",
+              "directory": "api-reference"
+            }
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Using the API",
             "pages": []
           },
           {
