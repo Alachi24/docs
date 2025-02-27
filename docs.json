@@ -15,7 +15,12 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": ["introduction", "authentication", "errors_and_rate_limit"]
+            "pages": [
+              "introduction",
+              "authentication",
+              "error_codes",
+              "Rate_Limit"
+            ]
           }
         ]
       },
@@ -41,35 +46,12 @@
           {
             "group": "Using the API",
             "pages": ["append_to_response"]
-          },
-          {
-            "group": "Endpoints",
-            "openapi": {
-              "source": "/api-reference/openapi.json",
-              "directory": "api-reference"
-            }
           }
         ]
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+      "anchors": []
     }
   },
   "logo": {

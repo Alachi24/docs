@@ -1,10 +1,8 @@
 ---
-title: Errors and rate limit
-icon: "triangle-exclamation"
+title: Error Codes
+icon: "bugs"
 description: "Errors and Rate/Set Limits You Might Encounter on TMDB."
 ---
-
-### Errors
 
 A list of errors you might come across while using TMDB.
 
@@ -57,14 +55,3 @@ A list of errors you might come across while using TMDB.
 | 45   | 403         | This user has been suspended.                                                         |
 | 46   | 503         | The API is undergoing maintenance. Try again later.                                   |
 | 47   | 400         | The input is not valid.                                                               |
-
-### Rate Limiting
-
-<Note>
-    **Legacy Rate Limits**
-
-    As of December 16, 2019, we have disabled the original API rate limiting (40 requests every 10 seconds.) If you have any questions about this, please head over to our API support forum.
-
-</Note>
-
-While our legacy rate limits have been disabled for some time, we do still have some upper limits to help mitigate needlessly high bulk scraping. They sit somewhere in the 50 requests per second range. This limit could change at any time so be respectful of the service we have built and respect the `429` if you receive one.
