@@ -50,7 +50,7 @@
           },
           {
             "group": "Images",
-            "pages": ["Basics"]
+            "pages": ["Basics", "Language"]
           }
         ]
       }

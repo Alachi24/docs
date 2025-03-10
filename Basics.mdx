@@ -19,3 +19,13 @@ When you dive into the image methods, you'll spot a handy new field: `file_type`
 - **SVG Logos:** If file_type flags an SVG, you're working with a scalable file that our system doesn't resize. For the best results, request the original size when fetching these. It's the perfect way to leverage SVG's crisp, scalable goodness.
 
 - **PNG Logos:** For PNGs, flexibility is the name of the game. The `file_type` confirms it's a PNG, and you can request any available size you'd like—our system resizes these from the original upload to fit your needs.
+
+This setup empowers you to select the format and size that works best for your application, all while keeping compatibility locked in for seamless integration.
+
+Take for instance Netflix's logo (`wwemzKWzjKYJFfCeiB57q3r4Bcm.svg`), you can call any of the following:
+
+```Example
+    https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg
+    https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.png
+    https://image.tmdb.org/t/p/w500/wwemzKWzjKYJFfCeiB57q3r4Bcm.png
+```

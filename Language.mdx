@@ -1,0 +1,33 @@
+---
+title: Languages
+icon: "language"
+description: "How do languages work with image queries?"
+---
+
+### Image Types
+
+When querying for images in our API, the behavior of image path fields `poster_path`, `backdrop_path`, and `still_path` varies based on language preferences, availability, and fallback logic. Below is a detailed explanation of how each field operates:
+
+**Poster_path**
+
+- **Language Priority:** The system first attempts to retrieve the poster in the language specified in your query (e.g., `en` or `fr`).
+
+- **Fallback Mechanism:**
+
+  - If no poster exists in the requested language, it defaults to the highest-rated poster in the media's original language, if available.
+
+  - If neither is found, it falls back to the overall highest-rated poster, regardless of language.
+
+- **Regional Variants:** Although the language query parameter supports regional lookups (e.g., `en-US` or `fr-CA`), regional variants for images are not currently supported. This functionality is planned for a future update.
+
+**Backdrop_path**
+
+- **Language Consideration:** Most backdrops lack a specific language designation. As a result, the default behavior is to return the highest-rated backdrop with no language specified.
+
+- **Fallback:** If no language-agnostic backdrop is available, the system returns the overall highest-rated backdrop, regardless of language.
+
+**Still_path**
+
+- **TV Episode Images:** Similar to backdrops, still images for TV episodes do not inherently have associated languages.
+
+- **Query Behavior:** The system retrieves the highest-rated still image available, with no language-based filtering applied.
