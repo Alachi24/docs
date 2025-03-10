@@ -1,0 +1,21 @@
+---
+title: Basics
+icon: "image-polaroid"
+description: "How to build an image URL."
+---
+
+Movie, TV, and person objects in our API include references to various file paths for images. To construct a fully functional image URL, you'll need three key components: a `base_url`, a `file_size`, and a `file_path`.
+
+The base_url and file_size are obtained via the [/configuration](https://chisa.mintlify.app/api-reference/configuration/details) API endpoint, while the file_path is specific to the media object you're querying. For example, if a movie returns a poster_path of `/1E5baAaEse26fej7uHcjOgEE2t2.jpg` and you want the w500 size, the complete image URL would combine these elements accordingly.
+
+```Example
+    https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg
+```
+
+Logos for companies and networks come in two versatile formats: SVG and PNG, giving you options to suit your project's needs. By default, the `logo_path` field in our API responses delivers a `.png` file. Why? This design choice ensures **backward compatibility**, as SVG support was added after the initial system rollout—keeping everything running smoothly for existing setups.
+
+When you dive into the image methods, you'll spot a handy new field: `file_type`. This little gem reveals the original format of the uploaded logo asset, making it easy to pick the right approach:
+
+- **SVG Logos:** If file_type flags an SVG, you're working with a scalable file that our system doesn't resize. For the best results, request the original size when fetching these. It's the perfect way to leverage SVG's crisp, scalable goodness.
+
+- **PNG Logos:** For PNGs, flexibility is the name of the game. The `file_type` confirms it's a PNG, and you can request any available size you'd like—our system resizes these from the original upload to fit your needs.

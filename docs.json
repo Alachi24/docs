@@ -47,6 +47,10 @@
           {
             "group": "Using the API",
             "pages": ["append_to_response", "Languages"]
+          },
+          {
+            "group": "Images",
+            "pages": ["Basics"]
           }
         ]
       }
