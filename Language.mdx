@@ -31,3 +31,28 @@ When querying for images in our API, the behavior of image path fields `poster_p
 - **TV Episode Images:** Similar to backdrops, still images for TV episodes do not inherently have associated languages.
 
 - **Query Behavior:** The system retrieves the highest-rated still image available, with no language-based filtering applied.
+
+<Note>
+  When querying `/images`, the language parameter filters by language tags. Use
+  `include_image_language` to add images from other languages or untagged ones.
+  Take a look below where we give an example of requesting the images tagged
+  with English and also those not tagged with any language.
+</Note>
+
+```Example_getting_English_&_no_language_images
+  curl --request GET \
+     --url 'https://api.themoviedb.org/3/movie/550/images?language=en-US&include_image_language=en,null' \
+     --header 'Authorization: Bearer ACCESS_TOKEN' \
+     --header 'accept: application/json'
+```
+
+Notice the `include_image_language` parameter. This query (`en`,`null`) is looking for all images that match English and those that haven't been set yet (null).
+
+Better yet, you can do query this image method in a single request by using `append_to_response`:
+
+```Example_with_append_to_response
+  curl --request GET \
+     --url 'https://api.themoviedb.org/3/movie/550?append_to_response=images&language=en-US&include_image_language=en,null' \
+     --header 'Authorization: Bearer ACCESS_TOKEN' \
+     --header 'accept: application/json'
+```
