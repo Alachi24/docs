@@ -46,7 +46,7 @@
         "groups": [
           {
             "group": "Using the API",
-            "pages": ["append_to_response", "Languages"]
+            "pages": ["append_to_response", "Languages", "Find_Data"]
           },
           {
             "group": "Images",
