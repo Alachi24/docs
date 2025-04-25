@@ -1,0 +1,16 @@
+---
+title: Tracking Changes
+icon: "display-chart-up"
+description: ""
+---
+
+If you want to stay up to date with the latest changes on TMDB, our "change" system makes it easy to track updates efficiently. This system works in two parts: first, identifying which IDs have been modified, and second, retrieving the specific changes for those IDs.
+
+### By Media Type
+
+You can access three main endpoints to get lists of changed IDs for movies, people, or TV shows. These endpoints provide a list of items updated within the last 24 hours by default, with the option to extend the range up to 14 days. Once you have an ID, you can dive deeper into its change history.
+
+### By Media ID
+
+With a specific ID in hand, you can query the change endpoint for that item (for example, the movie change endpoint). This returns detailed, field-level updates, similar to the public change logs on our website. You can choose to process all the changes or focus only on the data most relevant to you.
+Staying in sync with TMDB's changes ensures your application or service reflects the most current and accurate information available.
